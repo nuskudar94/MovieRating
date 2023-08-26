@@ -1,6 +1,6 @@
 package dev.numan.moviesRate;
 
-import java.lang.annotation.Documented;
+//import java.lang.annotation.Documented;
 
 
 @Document(collection="movies")
@@ -9,9 +9,9 @@ public class Movie {
 
     private String imdbId;
 
-    private  id;
+    //private  id;
 
-    private ObjectId id;
+    //private ObjectId id;
 
     private ObjectId id;
 
