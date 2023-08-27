@@ -13,7 +13,7 @@ public class Movie {
 
     //private ObjectId id;
 
-    private ObjectId id;
+    //private ObjectId id;
 
 
 }
