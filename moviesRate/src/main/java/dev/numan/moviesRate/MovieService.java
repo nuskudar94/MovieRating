@@ -1,5 +1,6 @@
 package dev.numan.moviesRate;
 
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,12 +11,13 @@ import java.util.Optional;
 public class MovieService {
 
     @Autowired
-    private MovieRepository repository;
+    private MovieRepository movieRepository;
 
-    public List<Movie> findAllMovies() {
-        return repository.findAll();
+    public List<Movie> allMovies() {
+        return movieRepository.findAll();
     }
-    public Optional<Movie> findMovieByImdbId(String imdbId) {
-        return repository.findMovieByImdbId(imdbId);
+
+    public Optional<Movie> singleMovie(String imdbId){
+        return movieRepository.findMovieByImdbId(imdbId);
     }
 }
